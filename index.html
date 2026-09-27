@@ -21,17 +21,30 @@
   <body>
     <!-- Navbar gets added here -->
     <div id="nav-placeholder"></div>
+
+    <!--Alert component-->
+    <div class="alert alert-info mt-3" role="alert">
+      Welcome to my responsive Bootstrap page!
+    </div>
     <!-- Here is where your div container(s) will go with your web page content-->
     <img
       src="images/halloween.jpg"
       alt="Profile photo of Ximena"
-      class="rounded"
+      class="rounded img-fluid"
       height="160"
       width="160"
     />
     <!--Added an image and organized it to make it look good.-->
-    <h1>Hello, GitHub! I'm Ximena</h1>
-    <p>This is my first web page using version control with Git and GitHub.</p>
+    <div class="container text-center mt-4">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h1>Hello, GitHub! I'm Ximena</h1>
+          <p>
+            This is my first web page using version control with Git and GitHub.
+          </p>
+        </div>
+      </div>
+    </div>
     <p>
       I am learning to edit and version websites using VS Code, Git, and GitHub.
     </p>
@@ -47,6 +60,23 @@
       <li>Red Tamales</li>
     </ol>
     <!--This is my favorite food to eat.-->
+    <img
+      src="images/storm.png"
+      alt="Storm image"
+      class="rounded img-fluid"
+      height="160"
+      width="160"
+    />
+
+    <div class="card text-bg-dark mx-auto" style="width: 200px">
+      <img class="card-img-top" src="images/storm.png" alt="Card image" />
+      <div class="card-body">
+        <h4 class="card-title">Ximena Ordonez Flores</h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+
     <script>
       // Load only the #site-nav element
       $("#nav-placeholder").load("navbar.html #site-nav");
